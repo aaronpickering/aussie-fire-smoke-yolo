@@ -23,16 +23,17 @@ behaviour specifically, not just generic fire footage.
 - Inference speed: ~0.8ms/image on an NVIDIA V100
 
 ### Validation performance
+<!-- METRICS_START -->
+| Metric | Overall |
+|---|---|
+| Precision | 0.727 |
+| Recall | 0.613 |
+| mAP50 | 0.672 |
+| mAP50-95 | 0.372 |
 
-| Metric | Overall | Fire | Smoke |
-|---|---|---|---|
-| Precision | 0.727 | 0.708 | 0.746 |
-| Recall | 0.613 | 0.625 | 0.602 |
-| mAP50 | 0.672 | 0.691 | 0.652 |
-| mAP50-95 | 0.372 | 0.351 | 0.393 |
-
-(Metrics from the intermediate ~90k-image training checkpoint; a further
-training run on the full combined dataset described below is in progress.)
+(Metrics from the intermediate ~90k-image training checkpoint. Per-class
+fire/smoke breakdown is available in the training logs.)
+<!-- METRICS_END -->
 
 ## Dataset sources and licensing
 

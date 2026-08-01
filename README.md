@@ -35,6 +35,13 @@ behaviour specifically, not just generic fire footage.
 fire/smoke breakdown is available in the training logs.)
 <!-- METRICS_END -->
 
+![Training and validation loss curves, and validation metrics (precision, recall, mAP50, mAP50-95) over 60 epochs](assets/training_curves.png)
+
+The dip in metrics around epoch 42 corresponds to a deliberate pause and
+resume of training (the Z840 GPU host is scheduled on/off based on solar
+generation and electricity price, since it's off-grid) -- not a training
+instability. Metrics recovered and continued improving after the resume.
+
 ## Dataset sources and licensing
 
 This project combines six publicly available sources. **Only the code in
@@ -89,11 +96,17 @@ If you use AusSmoke data (directly or via this project), please cite:
   streetlights) since it doesn't map onto this project's two-class scheme,
   and remapping `smoke` from index 2 to index 1.
 
+- `scripts/generate_training_chart.py` builds the loss/metrics chart above
+  from any `results.csv` produced by Ultralytics YOLO training. Also called
+  automatically by `update_and_push.sh` whenever the model and metrics are
+  updated, so the chart always matches the latest results.
+
 To reconstruct the full training set yourself: download each source from
 the links above, then run the scripts in this order against your own
-local copies. None of the scripts require anything beyond the Python
-standard library plus numpy, Pillow, and scipy (for the mask conversion
-step).
+local copies. `merge_datasets.py`, `convert_aussmoke.py`, and
+`merge_catargiu.py` require only the Python standard library plus numpy,
+Pillow, and scipy (for the mask conversion step);
+`generate_training_chart.py` additionally requires pandas and matplotlib.
 
 ## Training
 

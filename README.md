@@ -55,14 +55,17 @@ reconstruct the combined set from original sources).
 | NEWFireSmokeDataset (Catargiu) | ~27,300 | CC BY 4.0 | [GitHub](https://github.com/CostiCatargiu/NEWFireSmokeDataset_YoloModels) |
 | AusSmoke (from MultiNatSmoke) | ~15,200 | Permission requested, pending | [GitHub](https://github.com/henryzhao0615/MultiNatSmoke) |
 
-**AusSmoke note**: the AusSmoke portion of this dataset (and, by extension,
-some of the learned features in the released model weights) comes from the
+**AusSmoke note**: the AusSmoke portion of this dataset (and, by extension, 
+some of the learned features in any model weights trained on it) comes from the
 MultiNatSmoke benchmark by Li, Zhao, Zhu, Ji, Wilson, Yebra and Barnes (WACV
 2026). The AusSmoke component does not carry an explicit open license in
 its source repository, so permission to redistribute it (or a derived
 version) has been formally requested from the authors and is pending at
 time of writing. If you are one of the authors and are reading this,
 please get in touch.
+
+Pending that permission, the trained weights are not distributed in this
+repository.
 
 If you use AusSmoke data (directly or via this project), please cite:
 

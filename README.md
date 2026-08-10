@@ -19,7 +19,10 @@ behaviour specifically, not just generic fire footage.
 - Architecture: YOLOv8s
 - Classes: `fire` (0), `smoke` (1)
 - Input size: 640x640
-- Weights: `models/aussie-fire-smoke-yolov8s.pt`
+- Weights: not currently published — withheld pending redistribution
+  permission for the AusSmoke component (see Dataset sources below).
+  The merge, conversion and training steps below allow the model to be
+  reproduced from the original sources.
 - Inference speed: ~0.8ms/image on an NVIDIA V100
 
 ### Validation performance

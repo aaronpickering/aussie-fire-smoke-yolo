@@ -21,6 +21,7 @@ behaviour specifically, not just generic fire footage.
 - Input size: 640x640
 - Weights: `models/aussie-fire-smoke-yolov8s.pt`
 - Inference speed: ~0.8ms/image on an NVIDIA V100
+- Inference speed: ~24ms in Frigate via ONNX on an RTX3060
 
 ### Validation performance
 <!-- METRICS_START -->

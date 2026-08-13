@@ -45,7 +45,7 @@ This project combines six publicly available sources. **Only the code in
 this repository is covered by the MIT license below** -- each dataset
 retains its own original license, listed here for clarity. This repo does
 not redistribute the datasets themselves (see `scripts/` for how to
-reconstruct the combined set from original sources).
+reconstruct the combined set from original sources). The trained weights are included; the datasets are not.
 
 | Source | Images | License | Link |
 |---|---|---|---|

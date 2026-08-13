@@ -5,7 +5,7 @@ of over 120,000 images, built for real-time camera-based fire/smoke
 detection at a rural off-grid property in the Snowy Monaro region, NSW,
 Australia.
 
-## Why this exists
+## Why I've done this
 
 Most public fire/smoke detection datasets are dominated by North American
 or European wildfire and structure-fire imagery. This project combines
@@ -34,6 +34,9 @@ behaviour specifically, not just generic fire footage.
 (Metrics after 60 epochs on the full combined dataset. Per-class
 fire/smoke breakdown is available in the training logs.)
 <!-- METRICS_END -->
+
+## Please Note
+This model misses roughly three in ten fire and smoke instances. It must not be relied on as a sole means of fire detection — treat it as supplementary to official warnings such as NSW RFS Fires Near Me.
 
 ## Dataset sources and licensing
 
